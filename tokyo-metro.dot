@@ -89,12 +89,12 @@ graph tokyo_metro {
     H04 [label="六本木\rRoppongi"]
     H05 [label="神谷町\rKamiyachō"]
     C08_H06_M15 [label="霞ケ関\rKasumigaseki", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
-    H07 [label="日比谷\rHibiya"]
+    C09_H07_Y18 [label="日比谷\rHibiya", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     G09_H08_M16 [label="銀座\rGinza", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     H09 [label="東銀座\rHigashi-ginza"]
     H10 [label="築地\rTsukiji"]
     H11 [label="八丁堀\rHatchōbori"]
-    H12 [label="茅場町\rKayabachō"]
+    H12_T11 [label="茅場町\rKayabachō", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     H13 [label="人形町\rNingyōchō"]
     H14 [label="小伝馬町\rKodemmachō"]
     H15 [label="秋葉原\rAkihabara"]
@@ -103,10 +103,10 @@ graph tokyo_metro {
     H18 [label="入谷\rIriya"]
     H19 [label="三ノ輪\rMinowa"]
     H20 [label="南千住\rMinami-Senju"]
-    H21 [label="北千住\rKita-Senju"]
+    C18_H21 [label="北千住\rKita-Senju", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
 
     edge [color=gray]
-    H01 -- H02 -- H03 -- H04 -- H05 -- C08_H06_M15 -- H07 -- G09_H08_M16 -- H09 -- H10 -- H11 -- H12 -- H13 -- H14 -- H15 -- G15_H16 -- G16_H17 -- H18 -- H19 -- H20 -- H21
+    H01 -- H02 -- H03 -- H04 -- H05 -- C08_H06_M15 -- C09_H07_Y18 -- G09_H08_M16 -- H09 -- H10 -- H11 -- H12_T11 -- H13 -- H14 -- H15 -- G15_H16 -- G16_H17 -- H18 -- H19 -- H20 -- C18_H21
 
     // No 5: Tōzai Line
     node [color=skyblue, fontcolor=black]
@@ -120,7 +120,7 @@ graph tokyo_metro {
     T08 [label="竹橋\rTakebashi"]
     C11_M18_T09_Z08 [label="大手町\rŌtemachi", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     G11_T10 [label="日本橋\rNihombashi", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
-    T11 [label="茅場町\rKayabachō"]
+    H12_T11 [label="茅場町\rKayabachō", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     T12 [label="門前仲町\rMonzen-Nakachō"]
     T13 [label="木場\rKiba"]
     T14 [label="東陽町\rTōyōchō"]
@@ -135,7 +135,7 @@ graph tokyo_metro {
     T23 [label="西船橋\rNishi-Funabashi"]
 
     edge [color=skyblue]
-    T01 -- T02 -- T03 -- T04 -- T05 -- T06 -- T07 -- T08 -- C11_M18_T09_Z08 -- G11_T10 -- T11 -- T12 -- T13 -- T14 -- T15 -- T16 -- T17 -- T18 -- T19 -- T20 -- T21 -- T22 -- T23
+    T01 -- T02 -- T03 -- T04 -- T05 -- T06 -- T07 -- T08 -- C11_M18_T09_Z08 -- G11_T10 -- H12_T11 -- T12 -- T13 -- T14 -- T15 -- T16 -- T17 -- T18 -- T19 -- T20 -- T21 -- T22 -- T23
 
     // No 9: Chiyoda Line
     node [color=green, fontcolor=black]
@@ -147,7 +147,7 @@ graph tokyo_metro {
     C06 [label="赤坂\rAkasaka"]
     C07_G06_M14_N06 [label="国会議事堂前\rKokkai-Gijidō-mae", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     C08_H06_M15 [label="霞ケ関\rKasumigaseki", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
-    C09 [label="日比谷\rHibiya"]
+    C09_H07_Y18 [label="日比谷\rHibiya", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     C10 [label="二重橋前\rNijūbashimae"]
     C11_M18_T09_Z08 [label="大手町\rŌtemachi", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     C12_M19 [label="新御茶ノ水\rShin-Ochanomizu", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
@@ -156,12 +156,12 @@ graph tokyo_metro {
     C15 [label="千駄木\rSendagi"]
     C16 [label="西日暮里\rNishi-Nippori"]
     C17 [label="町屋\rMachiya"]
-    C18 [label="北千住\rKita-Senju"]
+    C18_H21 [label="北千住\rKita-Senju", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     C19 [label="綾瀬\rAyase"]
     C20 [label="北綾瀬\rKita-Ayase"]
 
     edge [color=green]
-    C01 -- C02 -- C03 -- C04_G02_Z02 -- C05 -- C06 -- C07_G06_M14_N06 -- C08_H06_M15 -- C09 -- C10 -- C11_M18_T09_Z08 -- C12_M19 -- C13 -- C14 -- C15 -- C16 -- C17 -- C18 -- C19 -- C20
+    C01 -- C02 -- C03 -- C04_G02_Z02 -- C05 -- C06 -- C07_G06_M14_N06 -- C08_H06_M15 -- C09_H07_Y18 -- C10 -- C11_M18_T09_Z08 -- C12_M19 -- C13 -- C14 -- C15 -- C16 -- C17 -- C18_H21 -- C19 -- C20
 
     // No 8: Yūrakuchō Line
     node [color=yellow, fontcolor=black]
@@ -182,7 +182,7 @@ graph tokyo_metro {
     Y15 [label="麹町\rKōjimachi"]
     M13_N07_G05_Y16_Z04 [label="永田町\rNagatachō", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     Y17 [label="桜田門\rSakuradamon"]
-    Y18 [label="有楽町\rYūrakuchō"]
+    C09_H07_Y18 [label="有楽町\rYūrakuchō", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     Y19 [label="銀座一丁目\rGinza-itchōme"]
     Y20 [label="新富町\rShintomichō"]
     Y21 [label="月島\rTsukishima"]
@@ -191,7 +191,7 @@ graph tokyo_metro {
     Y24 [label="新木場\rShin-Kiba"]
 
     edge [color=yellow]
-    Y01 -- Y02 -- Y03 -- Y04 -- Y05 -- Y06 -- Y07 -- Y08 -- F09_M25_Y09 -- Y10 -- Y11 -- Y12 -- Y13 -- Y14 -- Y15 -- M13_N07_G05_Y16_Z04 -- Y17 -- Y18 -- Y19 -- Y20 -- Y21 -- Y22 -- Y23 -- Y24
+    Y01 -- Y02 -- Y03 -- Y04 -- Y05 -- Y06 -- Y07 -- Y08 -- F09_M25_Y09 -- Y10 -- Y11 -- Y12 -- Y13 -- Y14 -- Y15 -- M13_N07_G05_Y16_Z04 -- Y17 -- C09_H07_Y18 -- Y19 -- Y20 -- Y21 -- Y22 -- Y23 -- Y24
 
     // No 11: Hanzōmon Line
     node [color=purple, fontcolor=white]
