@@ -44,6 +44,12 @@ References
 <dl>
     <dt>"Tokyo Metro"</dt>
     <dd>https://en.wikipedia.org/wiki/Tokyo_Metro</dd>
+
+    <dt>"Tokyo Metropolitan Bureau of Transportation"</dt>
+    <dd>https://en.wikipedia.org/wiki/Tokyo_Metropolitan_Bureau_of_Transportation</dd>
+
+    <dt>"Tokyu Corporation"</dt>
+    <dd>https://en.wikipedia.org/wiki/Tokyu_Corporation</dd>
 </dl>
 
 Keywords

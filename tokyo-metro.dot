@@ -1,15 +1,41 @@
-// Line                               | Code | Color        |
-// -----------------------------------+------+--------------+
-// No 3:  Ginza Line                  | G    | orange       |
-// No 4:  Marunouchi Line             | M    | red          |
-// No 4:  Marunouchi Line Branch Line | m    | red          |
-// No 2:  Hibiya Line                 | H    | gray         |
-// No 5:  Tōzai Line                  | T    | skyblue      |
-// No 9:  Chiyoda Line                | C    | green        |
-// No 8:  Yūrakuchō Line              | Y    | yellow       |
-// No 11: Hanzōmon Line               | Z    | purple       |
-// No 7:  Namboku Line                | N    | cyan3        |
-// No 13: Fukutoshin Line             | F    | brown        |
+// Tokyo Metro
+// https://en.wikipedia.org/wiki/Tokyo_Metro
+
+// Line                               | Code | Color   |
+// -----------------------------------+------+---------+
+// No 3:  Ginza Line                  | G    | orange  |
+// No 4:  Marunouchi Line             | M    | red     |
+// No 4:  Marunouchi Line Branch Line | m    | red     |
+// No 2:  Hibiya Line                 | H    | gray    |
+// No 5:  Tōzai Line                  | T    | skyblue |
+// No 9:  Chiyoda Line                | C    | green   |
+// No 8:  Yūrakuchō Line              | Y    | yellow  |
+// No 11: Hanzōmon Line               | Z    | purple  |
+// No 7:  Namboku Line                | N    | cyan3   |
+// No 13: Fukutoshin Line             | F    | brown   |
+
+// Toei
+// https://en.wikipedia.org/wiki/Tokyo_Metropolitan_Bureau_of_Transportation
+
+// Line                  | Code | Color          |
+// ----------------------+------+----------------+
+// No 1:  Asakusa  Line  | A    | pink           |
+// No 6:  Mita Line      | I    | blue           |
+// No 10: Shinjuku Line  | S    | mediumseagreen |
+// No 12: Ōedo Line      | E    | purple         |
+
+// Tōkyū Dentetsu
+// https://en.wikipedia.org/wiki/Tokyu_Corporation
+
+// Line                  | Code | Color          |
+// ----------------------+------+----------------+
+// Tōyoko Line           | TY   | red            |
+// Meguro Line           | MG   | cyan           |
+// Den-en-toshi Line     | DT   | mediumseagreen |
+// Ōimachi Line          | OM   | orange         |
+// Ikegami Line          | IK   | pink           |
+// Setagaya Line         | SG   | yellow         |
+// Tamagawa Line         | TM   | purple         |
 
 graph tokyo_metro {
     node [shape=box, style=filled]
