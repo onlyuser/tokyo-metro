@@ -17,12 +17,12 @@
 // Toei
 // https://en.wikipedia.org/wiki/Tokyo_Metropolitan_Bureau_of_Transportation
 
-// Line                  | Code | Color          |
-// ----------------------+------+----------------+
-// No 1:  Asakusa  Line  | A    | pink           |
-// No 6:  Mita Line      | I    | blue           |
-// No 10: Shinjuku Line  | S    | mediumseagreen |
-// No 12: Ōedo Line      | E    | purple         |
+// Line                 | Code | Color          |
+// ---------------------+------+----------------+
+// No 1:  Asakusa Line  | A    | pink           |
+// No 6:  Mita Line     | I    | blue           |
+// No 10: Shinjuku Line | S    | mediumseagreen |
+// No 12: Ōedo Line     | E    | purple         |
 
 // Tōkyū Dentetsu
 // https://en.wikipedia.org/wiki/Tokyu_Corporation
@@ -40,6 +40,10 @@
 graph tokyo_metro {
     node [shape=box, style=filled]
     edge [penwidth=5]
+
+    //=============//
+    // Tokyo Metro //
+    //=============//
 
     // No 3: Ginza Line
     node [color=orange, fontcolor=black]
@@ -285,4 +289,139 @@ graph tokyo_metro {
 
     edge [color=brown]
     F01_Y01 -- F02_Y02 -- F03_Y03 -- F04_Y04 -- F05_Y05 -- F06_Y06 -- F07_Y07 -- F08_Y08 -- F09_M25_Y09 -- F10 -- F11 -- F12 -- F13_M09 -- F14 -- C03_F15 -- G01_F16_Z01
+
+    //======//
+    // Toei //
+    //======//
+
+    // No 1: Asakusa Line
+    node [color=pink, fontcolor=black]
+    A01 [label="西馬込"]
+    A02 [label="馬込"]
+    A03 [label="中延"]
+    A04 [label="戸越"]
+    A05 [label="五反田"]
+    A06 [label="高輪台"]
+    A07 [label="泉岳寺"]
+    A08 [label="三田"]
+    A09 [label="大門"]
+    A10 [label="新橋"]
+    A11 [label="東銀座"]
+    A12 [label="宝町"]
+    A13 [label="日本橋"]
+    A14 [label="人形町"]
+    A15 [label="東日本橋"]
+    A16 [label="浅草橋"]
+    A17 [label="蔵前"]
+    A18 [label="浅草"]
+    A19 [label="本所吾妻橋"]
+    A20 [label="押上"]
+
+    edge [color=pink]
+    A01 -- A02 -- A03 -- A04 -- A05 -- A06 -- A07 -- A08 -- A09 -- A10 -- A11 -- A12 -- A13 -- A14 -- A15 -- A16 -- A17 -- A18 -- A19 -- A20
+
+    // No 6: Mita Line
+    node [color=blue, fontcolor=white]
+    I01 [label="目黒[* 1]"]
+    I02 [label="白金台[* 2]"]
+    I03 [label="白金高輪[* 2]"]
+    I04 [label="三田"]
+    I05 [label="芝公園"]
+    I06 [label="御成門"]
+    I07 [label="内幸町"]
+    I08 [label="日比谷"]
+    I09 [label="大手町"]
+    I10 [label="神保町"]
+    I11 [label="水道橋"]
+    I12 [label="春日"]
+    I13 [label="白山"]
+    I14 [label="千石"]
+    I15 [label="巣鴨"]
+    I16 [label="西巣鴨"]
+    I17 [label="新板橋"]
+    I18 [label="板橋区役所前"]
+    I19 [label="板橋本町"]
+    I20 [label="本蓮沼"]
+    I21 [label="志村坂上"]
+    I22 [label="志村三丁目"]
+    I23 [label="蓮根"]
+    I24 [label="西台"]
+    I25 [label="高島平"]
+    I26 [label="新高島平"]
+    I27 [label="西高島平"]
+
+    edge [color=blue]
+    I01 -- I02 -- I03 -- I04 -- I05 -- I06 -- I07 -- I08 -- I09 -- I10 -- I11 -- I12 -- I13 -- I14 -- I15 -- I16 -- I17 -- I18 -- I19 -- I20 -- I21 -- I22 -- I23 -- I24 -- I25 -- I26 -- I27
+
+    // No 10: Shinjuku Line
+    node [color=mediumseagreen, fontcolor=white]
+    S01 [label="新宿"]
+    S02 [label="新宿三丁目"]
+    S03 [label="曙橋"]
+    S04 [label="市ケ谷"]
+    S05 [label="九段下"]
+    S06 [label="神保町"]
+    S07 [label="小川町"]
+    S08 [label="岩本町"]
+    S09 [label="馬喰横山"]
+    S10 [label="浜町"]
+    S11 [label="森下"]
+    S12 [label="菊川"]
+    S13 [label="住吉"]
+    S14 [label="西大島"]
+    S15 [label="大島"]
+    S16 [label="東大島"]
+    S17 [label="船堀"]
+    S18 [label="一之江"]
+    S19 [label="瑞江"]
+    S20 [label="篠崎"]
+    S21 [label="本八幡"]
+
+    edge [color=mediumseagreen]
+    S01 -- S02 -- S03 -- S04 -- S05 -- S06 -- S07 -- S08 -- S09 -- S10 -- S11 -- S12 -- S13 -- S14 -- S15 -- S16 -- S17 -- S18 -- S19 -- S20 -- S21
+
+    // No 12: Ōedo Line
+    node [color=purple, fontcolor=white]
+    E28 [label="都庁前"]
+    E01 [label="新宿西口"]
+    E02 [label="東新宿"]
+    E03 [label="若松河田"]
+    E04 [label="牛込柳町"]
+    E05 [label="牛込神楽坂"]
+    E06 [label="飯田橋"]
+    E07 [label="春日"]
+    E08 [label="本郷三丁目"]
+    E09 [label="上野御徒町"]
+    E10 [label="新御徒町"]
+    E11 [label="蔵前"]
+    E12 [label="両国"]
+    E13 [label="森下"]
+    E14 [label="清澄白河"]
+    E15 [label="門前仲町"]
+    E16 [label="月島"]
+    E17 [label="勝どき"]
+    E18 [label="築地市場"]
+    E19 [label="汐留"]
+    E20 [label="大門"]
+    E21 [label="赤羽橋"]
+    E22 [label="麻布十番"]
+    E23 [label="六本木"]
+    E24 [label="青山一丁目"]
+    E25 [label="国立競技場"]
+    E26 [label="代々木"]
+    E27 [label="新宿"]
+    E28 [label="都庁前"]
+    E29 [label="西新宿五丁目"]
+    E30 [label="中野坂上"]
+    E31 [label="東中野"]
+    E32 [label="中井"]
+    E33 [label="落合南長崎"]
+    E34 [label="新江古田"]
+    E35 [label="練馬"]
+    E36 [label="豊島園"]
+    E37 [label="練馬春日町"]
+    E38 [label="光が丘"]
+
+    edge [color=purple]
+    E28 -- E01 -- E02 -- E03 -- E04 -- E05 -- E06 -- E07 -- E08 -- E09 -- E10 -- E11 -- E12 -- E13 -- E14 -- E15 -- E16 -- E17 -- E18 -- E19 -- E20 -- E21 -- E22 -- E23 -- E24 -- E25 -- E26 -- E27 -- E28 -- E29 -- E30 -- E31 -- E32 -- E33 -- E34 -- E35 -- E36 -- E37 -- E38
 }
