@@ -35,6 +35,7 @@ Usage
 -----
 
 <pre>
+fdp tokyo-metro.dot -Tpng -otokyo-metro.png
 neato tokyo-metro.dot -Tpng -otokyo-metro.png
 dot tokyo-metro.dot -Tpng -otokyo-metro.png
 </pre>

@@ -38,8 +38,6 @@
 // Tamagawa Line     | TM   | purple         |
 
 graph tokyo_metro {
-    //graph [layout=sfdp]
-    graph [layout=fdp]
     node [shape=box, style=filled]
     edge [penwidth=5]
 
