@@ -27,17 +27,19 @@
 // Tōkyū Dentetsu
 // https://en.wikipedia.org/wiki/Tokyu_Corporation
 
-// Line                  | Code | Color          |
-// ----------------------+------+----------------+
-// Tōyoko Line           | TY   | red            |
-// Meguro Line           | MG   | cyan           |
-// Den-en-toshi Line     | DT   | mediumseagreen |
-// Ōimachi Line          | OM   | orange         |
-// Ikegami Line          | IK   | pink           |
-// Setagaya Line         | SG   | yellow         |
-// Tamagawa Line         | TM   | purple         |
+// Line              | Code | Color          |
+// ------------------+------+----------------+
+// Tōyoko Line       | TY   | red            |
+// Meguro Line       | MG   | cyan           |
+// Den-en-toshi Line | DT   | mediumseagreen |
+// Ōimachi Line      | OM   | orange         |
+// Ikegami Line      | IK   | pink           |
+// Setagaya Line     | SG   | yellow         |
+// Tamagawa Line     | TM   | purple         |
 
 graph tokyo_metro {
+    //graph [layout=sfdp]
+    graph [layout=fdp]
     node [shape=box, style=filled]
     edge [penwidth=5]
 
@@ -54,10 +56,10 @@ graph tokyo_metro {
     M13_N07_G05_Y16_Z04 [label="赤坂見附", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     C07_G06_M14_N06 [label="溜池山王", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     G07 [label="虎ノ門"]
-    G08 [label="新橋"]
+    A10_G08 [label="新橋", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     G09_H08_M16 [label="銀座", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     G10 [label="京橋"]
-    G11_T10 [label="日本橋", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+    A13_G11_T10 [label="日本橋", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     G12_Z09 [label="三越前", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     G13 [label="神田"]
     G14 [label="末広町"]
@@ -65,10 +67,10 @@ graph tokyo_metro {
     G16_H17 [label="上野", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     G17 [label="稲荷町"]
     G18 [label="田原町"]
-    G19 [label="浅草"]
+    A18_G19 [label="浅草", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
 
     edge [color=orange]
-    G01_F16_Z01 -- C04_G02_Z02 -- G03 -- G04_Z03 -- M13_N07_G05_Y16_Z04 -- C07_G06_M14_N06 -- G07 -- G08 -- G09_H08_M16 -- G10 -- G11_T10 -- G12_Z09 -- G13 -- G14 -- G15_H16 -- G16_H17 -- G17 -- G18 -- G19
+    G01_F16_Z01 -- C04_G02_Z02 -- G03 -- G04_Z03 -- M13_N07_G05_Y16_Z04 -- C07_G06_M14_N06 -- G07 -- A10_G08 -- G09_H08_M16 -- G10 -- A13_G11_T10 -- G12_Z09 -- G13 -- G14 -- G15_H16 -- G16_H17 -- G17 -- G18 -- A18_G19
 
     // No 4: Marunouchi Line
     node [color=red, fontcolor=white]
@@ -121,11 +123,11 @@ graph tokyo_metro {
     C08_H06_M15 [label="霞ケ関", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     C09_H07_Y18 [label="日比谷", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     G09_H08_M16 [label="銀座", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
-    H09 [label="東銀座"]
+    A11_H09 [label="東銀座", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     H10 [label="築地"]
     H11 [label="八丁堀"]
     H12_T11 [label="茅場町", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
-    H13 [label="人形町"]
+    A14_H13 [label="人形町", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     H14 [label="小伝馬町"]
     H15 [label="秋葉原"]
     G15_H16 [label="仲御徒町", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
@@ -136,7 +138,7 @@ graph tokyo_metro {
     C18_H21 [label="北千住", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
 
     edge [color=gray]
-    H01 -- H02 -- H03 -- H04 -- H05 -- C08_H06_M15 -- C09_H07_Y18 -- G09_H08_M16 -- H09 -- H10 -- H11 -- H12_T11 -- H13 -- H14 -- H15 -- G15_H16 -- G16_H17 -- H18 -- H19 -- H20 -- C18_H21
+    H01 -- H02 -- H03 -- H04 -- H05 -- C08_H06_M15 -- C09_H07_Y18 -- G09_H08_M16 -- A11_H09 -- H10 -- H11 -- H12_T11 -- A14_H13 -- H14 -- H15 -- G15_H16 -- G16_H17 -- H18 -- H19 -- H20 -- C18_H21
 
     // No 5: Tōzai Line
     node [color=skyblue, fontcolor=black]
@@ -149,7 +151,7 @@ graph tokyo_metro {
     T07_Z06 [label="九段下", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     T08 [label="竹橋"]
     C11_M18_T09_Z08 [label="大手町", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
-    G11_T10 [label="日本橋", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+    A13_G11_T10 [label="日本橋", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     H12_T11 [label="茅場町", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     T12 [label="門前仲町"]
     T13 [label="木場"]
@@ -165,7 +167,7 @@ graph tokyo_metro {
     T23 [label="西船橋"]
 
     edge [color=skyblue]
-    T01 -- T02 -- T03 -- T04 -- T05 -- N10_T06_Y13 -- T07_Z06 -- T08 -- C11_M18_T09_Z08 -- G11_T10 -- H12_T11 -- T12 -- T13 -- T14 -- T15 -- T16 -- T17 -- T18 -- T19 -- T20 -- T21 -- T22 -- T23
+    T01 -- T02 -- T03 -- T04 -- T05 -- N10_T06_Y13 -- T07_Z06 -- T08 -- C11_M18_T09_Z08 -- A13_G11_T10 -- H12_T11 -- T12 -- T13 -- T14 -- T15 -- T16 -- T17 -- T18 -- T19 -- T20 -- T21 -- T22 -- T23
 
     // No 9: Chiyoda Line
     node [color=green, fontcolor=black]
@@ -238,10 +240,10 @@ graph tokyo_metro {
     Z11 [label="清澄白河"]
     Z12 [label="住吉"]
     Z13 [label="錦糸町"]
-    Z14 [label="押上"]
+    A20_Z14 [label="押上", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
 
     edge [color=purple]
-    G01_F16_Z01 -- C04_G02_Z02 -- G04_Z03 -- M13_N07_G05_Y16_Z04 -- Z05 -- T07_Z06 -- Z07 -- C11_M18_T09_Z08 -- G12_Z09 -- Z10 -- Z11 -- Z12 -- Z13 -- Z14
+    G01_F16_Z01 -- C04_G02_Z02 -- G04_Z03 -- M13_N07_G05_Y16_Z04 -- Z05 -- T07_Z06 -- Z07 -- C11_M18_T09_Z08 -- G12_Z09 -- Z10 -- Z11 -- Z12 -- Z13 -- A20_Z14
 
     // No 7: Namboku Line
     node [color=cyan3, fontcolor=black]
@@ -305,20 +307,20 @@ graph tokyo_metro {
     A07 [label="泉岳寺"]
     A08_I04 [label="三田", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     A09_E20 [label="大門", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
-    A10 [label="新橋"]
-    A11 [label="東銀座"]
+    A10_G08 [label="新橋", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+    A11_H09 [label="東銀座", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     A12 [label="宝町"]
-    A13 [label="日本橋"]
-    A14 [label="人形町"]
+    A13_G11_T10 [label="日本橋", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+    A14_H13 [label="人形町", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     A15_S09 [label="東日本橋", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     A16 [label="浅草橋"]
     A17_E11 [label="蔵前", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
-    A18 [label="浅草"]
+    A18_G19 [label="浅草", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     A19 [label="本所吾妻橋"]
-    A20 [label="押上"]
+    A20_Z14 [label="押上", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
 
     edge [color=pink]
-    A01 -- A02 -- A03 -- A04 -- A05 -- A06 -- A07 -- A08_I04 -- A09_E20 -- A10 -- A11 -- A12 -- A13 -- A14 -- A15_S09 -- A16 -- A17_E11 -- A18 -- A19 -- A20
+    A01 -- A02 -- A03 -- A04 -- A05 -- A06 -- A07 -- A08_I04 -- A09_E20 -- A10_G08 -- A11_H09 -- A12 -- A13_G11_T10 -- A14_H13 -- A15_S09 -- A16 -- A17_E11 -- A18_G19 -- A19 -- A20_Z14
 
     // No 6: Mita Line
     node [color=blue, fontcolor=white]

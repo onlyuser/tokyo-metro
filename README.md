@@ -36,6 +36,7 @@ Usage
 
 <pre>
 neato tokyo-metro.dot -Tpng -otokyo-metro.png
+dot tokyo-metro.dot -Tpng -otokyo-metro.png
 </pre>
 
 References
