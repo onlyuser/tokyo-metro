@@ -50,8 +50,14 @@ References
     <dt>"Tokyo Metropolitan Bureau of Transportation"</dt>
     <dd>https://en.wikipedia.org/wiki/Tokyo_Metropolitan_Bureau_of_Transportation</dd>
 
-    <dt>"Tokyu Corporation"</dt>
-    <dd>https://en.wikipedia.org/wiki/Tokyu_Corporation</dd>
+    <dt>"Yamanote Line"</dt>
+    <dd>https://en.wikipedia.org/wiki/Yamanote_Line</dd>
+
+    <dt>"Tokyo Monorail"</dt>
+    <dd>https://en.wikipedia.org/wiki/Tokyo_Monorail</dd>
+
+    <dt>"Keikyū Airport Line"</dt>
+    <dd>https://en.wikipedia.org/wiki/Keiky%C5%AB_Airport_Line</dd>
 </dl>
 
 Keywords
