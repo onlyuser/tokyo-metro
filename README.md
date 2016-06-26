@@ -14,7 +14,7 @@ A Motivating Example
 
 Radial:
 
-[![picture alt](https://sites.google.com/site/onlyuser/files/tokyo-metro_thumb.png "tokyo-metro")](https://sites.google.com/site/onlyuser/files/tokyo-metro.png)
+[![picture alt](https://sites.google.com/site/onlyuser/files/tokyo-metro_thumb.png "tokyo-metro")](https://sites.google.com/site/onlyuser/files/tokyo-metro.png?attredirects=0)
 
 Tree layout:
 
@@ -36,7 +36,6 @@ Usage
 
 <pre>
 fdp tokyo-metro.dot -Tpng -otokyo-metro.png
-neato tokyo-metro.dot -Tpng -otokyo-metro.png
 dot tokyo-metro.dot -Tpng -otokyo-metro.png
 </pre>
 
