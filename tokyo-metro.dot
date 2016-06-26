@@ -55,7 +55,7 @@
 
 graph tokyo_metro {
     node [shape=box, style=filled]
-    edge [penwidth=5]
+    edge [penwidth=4]
 
     //=============//
     // Tokyo Metro //
@@ -104,7 +104,7 @@ graph tokyo_metro {
     C07_G06_M14_N06 [label="国会議事堂前", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     C08_H06_M15 [label="霞ケ関", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     G09_H08_M16 [label="銀座", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
-    CH01_JREYTH09_JREYTK01_M17_SB01 [label="東京", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+    CH01_JREK01_JREYTH09_JREYTK01_M17_SB01 [label="東京", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     C11_I09_M18_T09_Z08 [label="大手町", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     C12_M19 [label="淡路町", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     CH03_M20 [label="御茶ノ水"]
@@ -115,7 +115,7 @@ graph tokyo_metro {
     F09_JREY13_M25_Y09 [label="池袋", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
 
     edge [color=red]
-    M01 -- M02 -- M03 -- M04 -- M05 -- E30_M06 -- M07 -- CH05_E01_E27_JREY09_M08_S01 -- F13_M09 -- M10 -- M11 -- CH04_M12_N08 -- M13_N07_G05_Y16_Z04 -- C07_G06_M14_N06 -- C08_H06_M15 -- G09_H08_M16 -- CH01_JREYTH09_JREYTK01_M17_SB01 -- C11_I09_M18_T09_Z08 -- C12_M19 -- CH03_M20 -- E08_M21 -- E07_I12_M22_N11 -- M23 -- M24 -- F09_JREY13_M25_Y09
+    M01 -- M02 -- M03 -- M04 -- M05 -- E30_M06 -- M07 -- CH05_E01_E27_JREY09_M08_S01 -- F13_M09 -- M10 -- M11 -- CH04_M12_N08 -- M13_N07_G05_Y16_Z04 -- C07_G06_M14_N06 -- C08_H06_M15 -- G09_H08_M16 -- CH01_JREK01_JREYTH09_JREYTK01_M17_SB01 -- C11_I09_M18_T09_Z08 -- C12_M19 -- CH03_M20 -- E08_M21 -- E07_I12_M22_N11 -- M23 -- M24 -- F09_JREY13_M25_Y09
 
     // No 4: Marunouchi Line Branch Line
     node [color=red, fontcolor=white]
@@ -139,7 +139,7 @@ graph tokyo_metro {
     G09_H08_M16 [label="銀座", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     A11_H09 [label="東銀座", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     H10 [label="築地"]
-    H11 [label="八丁堀"]
+    H11_JREK02 [label="八丁堀"]
     H12_T11 [label="茅場町", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     A14_H13 [label="人形町", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     H14 [label="小伝馬町"]
@@ -152,7 +152,7 @@ graph tokyo_metro {
     C18_H21 [label="北千住", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
 
     edge [color=gray]
-    H01 -- H02_JREY05 -- H03 -- E23_H04 -- H05 -- C08_H06_M15 -- C09_H07_I08_JREYTK02_Y18 -- G09_H08_M16 -- A11_H09 -- H10 -- H11 -- H12_T11 -- A14_H13 -- H14 -- H15_JREYTH07 -- E09_G15_H16 -- G16_H17_JREYTH05 -- H18 -- H19 -- H20 -- C18_H21
+    H01 -- H02_JREY05 -- H03 -- E23_H04 -- H05 -- C08_H06_M15 -- C09_H07_I08_JREYTK02_Y18 -- G09_H08_M16 -- A11_H09 -- H10 -- H11_JREK02 -- H12_T11 -- A14_H13 -- H14 -- H15_JREYTH07 -- E09_G15_H16 -- G16_H17_JREYTH05 -- H18 -- H19 -- H20 -- C18_H21
 
     // No 5: Tōzai Line
     node [color=skyblue, fontcolor=black]
@@ -178,10 +178,10 @@ graph tokyo_metro {
     T20 [label="行徳"]
     T21 [label="妙典"]
     T22 [label="原木中山"]
-    T23 [label="西船橋"]
+    JREK12_T23 [label="西船橋"]
 
     edge [color=skyblue]
-    T01 -- T02 -- JREY11_T03 -- T04 -- T05 -- E06_N10_T06_Y13 -- T07_Z06 -- T08 -- C11_I09_M18_T09_Z08 -- A13_G11_T10 -- H12_T11 -- E15_T12 -- T13 -- T14 -- T15 -- T16 -- T17 -- T18 -- T19 -- T20 -- T21 -- T22 -- T23
+    T01 -- T02 -- JREY11_T03 -- T04 -- T05 -- E06_N10_T06_Y13 -- T07_Z06 -- T08 -- C11_I09_M18_T09_Z08 -- A13_G11_T10 -- H12_T11 -- E15_T12 -- T13 -- T14 -- T15 -- T16 -- T17 -- T18 -- T19 -- T20 -- T21 -- T22 -- JREK12_T23
 
     // No 9: Chiyoda Line
     node [color=green, fontcolor=black]
@@ -234,10 +234,10 @@ graph tokyo_metro {
     E16_Y21 [label="月島", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     Y22 [label="豊洲"]
     Y23 [label="辰巳"]
-    Y24 [label="新木場"]
+    JREK05_Y24 [label="新木場"]
 
     edge [color=yellow]
-    F01_Y01 -- F02_Y02 -- F03_Y03 -- F04_Y04 -- F05_Y05 -- F06_Y06 -- F07_Y07 -- F08_Y08 -- F09_JREY13_M25_Y09 -- Y10 -- Y11 -- Y12 -- E06_N10_T06_Y13 -- N09_Y14 -- Y15 -- M13_N07_G05_Y16_Z04 -- Y17 -- C09_H07_I08_JREYTK02_Y18 -- Y19 -- Y20 -- E16_Y21 -- Y22 -- Y23 -- Y24
+    F01_Y01 -- F02_Y02 -- F03_Y03 -- F04_Y04 -- F05_Y05 -- F06_Y06 -- F07_Y07 -- F08_Y08 -- F09_JREY13_M25_Y09 -- Y10 -- Y11 -- Y12 -- E06_N10_T06_Y13 -- N09_Y14 -- Y15 -- M13_N07_G05_Y16_Z04 -- Y17 -- C09_H07_I08_JREYTK02_Y18 -- Y19 -- Y20 -- E16_Y21 -- Y22 -- Y23 -- JREK05_Y24
 
     // No 11: Hanzōmon Line
     node [color=purple, fontcolor=white]
@@ -446,7 +446,7 @@ graph tokyo_metro {
     //=========//
 
     // JR East: Yamanote Line
-    node [color=green, fontcolor=white]
+    node [color=green, fontcolor=black]
     JREY01_JREYTK06 [label="品川", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     JREY02 [label="大崎"]
     A05_JREY03 [label="五反田", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
@@ -465,11 +465,11 @@ graph tokyo_metro {
     JREY16_N14 [label="駒込", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     JREY17_JREYTH01 [label="田端", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
 
-    edge [color=green]
+    edge [color=green, penwidth=12]
     JREY01_JREYTK06 -- JREY02 -- A05_JREY03 -- I01_JREY04_N01 -- H02_JREY05 -- F16_G01_JREY06_Z01 -- C03_F15_JREY07 -- E26_JREY08 -- CH05_E01_E27_JREY09_M08_S01 -- JREY10 -- JREY11_T03 -- JREY12 -- F09_JREY13_M25_Y09 -- JREY14 -- I15_JREY15 -- JREY16_N14 -- JREY17_JREYTH01
 
     // Tōhoku Main Line
-    node [color=green, fontcolor=white]
+    node [color=green, fontcolor=black]
     JREY17_JREYTH01 [label="田端", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     C16_JREYTH02 [label="西日暮里", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     JREYTH03 [label="日暮里"]
@@ -478,22 +478,46 @@ graph tokyo_metro {
     JREYTH06 [label="御徒町"]
     H15_JREYTH07 [label="秋葉原", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     CH02_G13_JREYTH08 [label="神田", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
-    CH01_JREYTH09_JREYTK01_M17_SB01 [label="東京", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+    CH01_JREK01_JREYTH09_JREYTK01_M17_SB01 [label="東京", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
 
-    edge [color=green]
-    JREY17_JREYTH01 -- C16_JREYTH02 -- JREYTH03 -- JREYTH04 -- G16_H17_JREYTH05 -- JREYTH06 -- H15_JREYTH07 -- CH02_G13_JREYTH08 -- CH01_JREYTH09_JREYTK01_M17_SB01
+    edge [color=green, penwidth=12]
+    JREY17_JREYTH01 -- C16_JREYTH02 -- JREYTH03 -- JREYTH04 -- G16_H17_JREYTH05 -- JREYTH06 -- H15_JREYTH07 -- CH02_G13_JREYTH08 -- CH01_JREK01_JREYTH09_JREYTK01_M17_SB01
 
     // Tokaido Main Line
-    node [color=green, fontcolor=white]
-    CH01_JREYTH09_JREYTK01_M17_SB01 [label="東京", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+    node [color=green, fontcolor=black]
+    CH01_JREK01_JREYTH09_JREYTK01_M17_SB01 [label="東京", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     C09_H07_I08_JREYTK02_Y18 [label="有楽町", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     A10_G08_JREYTK03 [label="新橋", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     A09_E20_JREYTK04_TM01 [label="浜松町", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     JREYTK05 [label="田町"]
     JREY01_JREYTK06 [label="品川", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
 
-    edge [color=green]
-    CH01_JREYTH09_JREYTK01_M17_SB01 -- C09_H07_I08_JREYTK02_Y18 -- A10_G08_JREYTK03 -- A09_E20_JREYTK04_TM01 -- JREYTK05 -- JREY01_JREYTK06
+    edge [color=green, penwidth=12]
+    CH01_JREK01_JREYTH09_JREYTK01_M17_SB01 -- C09_H07_I08_JREYTK02_Y18 -- A10_G08_JREYTK03 -- A09_E20_JREYTK04_TM01 -- JREYTK05 -- JREY01_JREYTK06
+
+    // Keiyō Line
+    node [color=red, fontcolor=white]
+    CH01_JREK01_JREYTH09_JREYTK01_M17_SB01 [label="Tokyo"]
+    H11_JREK02 [label="Hatchōbori"]
+    JREK03 [label="Etchūjima"]
+    JREK04 [label="Shiomi"]
+    JREK05_Y24 [label="Shin-Kiba"]
+    JREK06 [label="Kasairinkaikōen"]
+    JREK07 [label="Maihama"]
+    JREK08 [label="Shin-Urayasu"]
+    JREK09 [label="Ichikawa-Shiohama"]
+    JREK10 [label="Nishi-Funabashi"]
+    JREK11 [label="Futamata-Shinmachi"]
+    JREK12_T23 [label="Minami-Funabashi"]
+    JREK13 [label="Shin-Narashino"]
+    JREK14 [label="Kaihin-Makuhari"]
+    JREK15 [label="Kemigawahama"]
+    JREK16 [label="Inage-Kaigan"]
+    JREK17 [label="Chiba-Minato"]
+    JREK18 [label="Soga"]
+
+    edge [color=red, penwidth=12]
+    CH01_JREK01_JREYTH09_JREYTK01_M17_SB01 -- H11_JREK02 -- JREK03 -- JREK04 -- JREK05_Y24 -- JREK06 -- JREK07 -- JREK08 -- JREK09 -- JREK10 -- JREK11 -- JREK12_T23 -- JREK13 -- JREK14 -- JREK15 -- JREK16 -- JREK17 -- JREK18
 
     //================//
     // Tokyo Monorail //
@@ -512,7 +536,7 @@ graph tokyo_metro {
     TM10 [label="羽田空港第１ビル"]
     TM11 [label="羽田空港第２ビル"]
 
-    edge [color=black]
+    edge [color=black, style=dashed]
     A09_E20_JREYTK04_TM01 -- TM02 -- TM03 -- TM04 -- TM05 -- TM06 -- TM07 -- TM08 -- TM09 -- TM10 -- TM11
 
     //===================//
@@ -520,25 +544,25 @@ graph tokyo_metro {
     //===================//
 
     node [color=orange, fontcolor=black]
-    CH01_JREYTH09_JREYTK01_M17_SB01 [label="東京", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+    CH01_JREK01_JREYTH09_JREYTK01_M17_SB01 [label="東京", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     CH02_G13_JREYTH08 [label="神田", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     CH03_M20 [label="御茶ノ水", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     CH04_M12_N08 [label="四ツ谷", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     CH05_E01_E27_JREY09_M08_S01 [label="新宿", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
 
     edge [color=orange]
-    CH01_JREYTH09_JREYTK01_M17_SB01 -- CH02_G13_JREYTH08 -- CH03_M20 -- CH04_M12_N08 -- CH05_E01_E27_JREY09_M08_S01
+    CH01_JREK01_JREYTH09_JREYTK01_M17_SB01 -- CH02_G13_JREYTH08 -- CH03_M20 -- CH04_M12_N08 -- CH05_E01_E27_JREY09_M08_S01
 
     //===================//
     // Sōbu Line (Rapid) //
     //===================//
 
     node [color=yellow, fontcolor=black]
-    CH01_JREYTH09_JREYTK01_M17_SB01 [label="東京", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+    CH01_JREK01_JREYTH09_JREYTK01_M17_SB01 [label="東京", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     G12_SB02_Z09 [label="新日本橋", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     A15_S09_SB03 [label="馬喰町", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     SB04_Z13 [label="錦糸町", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
 
     edge [color=yellow]
-    CH01_JREYTH09_JREYTK01_M17_SB01 -- G12_SB02_Z09 -- A15_S09_SB03 -- SB04_Z13
+    CH01_JREK01_JREYTH09_JREYTK01_M17_SB01 -- G12_SB02_Z09 -- A15_S09_SB03 -- SB04_Z13
 }
