@@ -14,11 +14,11 @@ A Motivating Example
 
 Radial:
 
-[![picture alt](https://sites.google.com/site/onlyuser/files/tokyo-metro_thumb.png "tokyo-metro")](https://sites.google.com/site/onlyuser/files/tokyo-metro.png?attredirects=0)
+[![picture alt](https://sites.google.com/site/onlyuser/files/tokyo-metro_thumb.png?attredirects=0 "tokyo-metro")](https://sites.google.com/site/onlyuser/files/tokyo-metro.png?attredirects=0)
 
 Tree layout:
 
-[![picture alt](https://sites.google.com/site/onlyuser/files/tokyo-metro_tree_layout_thumb.png "tokyo-metro")](https://sites.google.com/site/onlyuser/files/tokyo-metro_tree_layout.png)
+[![picture alt](https://sites.google.com/site/onlyuser/files/tokyo-metro_tree_layout_thumb.png?attredirects=0 "tokyo-metro")](https://sites.google.com/site/onlyuser/files/tokyo-metro_tree_layout.png?attredirects=0)
 
 Requirements
 ------------
