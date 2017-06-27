@@ -23,7 +23,7 @@ Tree layout:
 Requirements
 ------------
 
-* graphviz dot
+    graphviz
 
 Installation (Debian)
 ---------------------
@@ -45,16 +45,12 @@ References
 <dl>
     <dt>"Tokyo Metro"</dt>
     <dd>https://en.wikipedia.org/wiki/Tokyo_Metro</dd>
-
     <dt>"Tokyo Metropolitan Bureau of Transportation"</dt>
     <dd>https://en.wikipedia.org/wiki/Tokyo_Metropolitan_Bureau_of_Transportation</dd>
-
     <dt>"Yamanote Line"</dt>
     <dd>https://en.wikipedia.org/wiki/Yamanote_Line</dd>
-
     <dt>"Tokyo Monorail"</dt>
     <dd>https://en.wikipedia.org/wiki/Tokyo_Monorail</dd>
-
     <dt>"Keikyū Airport Line"</dt>
     <dd>https://en.wikipedia.org/wiki/Keiky%C5%AB_Airport_Line</dd>
 </dl>
